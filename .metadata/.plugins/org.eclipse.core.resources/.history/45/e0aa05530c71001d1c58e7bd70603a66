@@ -1,0 +1,21 @@
+package com.alandev.webservices.services;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.alandev.webservices.entities.User;
+import com.alandev.webservices.rerpositories.UserRepsitory;
+
+@Service
+public class UserService {
+
+	@Autowired
+	private UserRepsitory repsitory;
+
+	public List<User> findAll() {
+		return repsitory.findAll();
+	}
+
+}

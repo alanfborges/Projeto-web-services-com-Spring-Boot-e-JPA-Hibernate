@@ -1,0 +1,42 @@
+package com.alandev.webservices.services;
+
+import java.util.List;
+import java.util.Optional;
+
+import org.springframework.beans.BeanUtils;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.alandev.webservices.entities.Category;
+import com.alandev.webservices.rerpositories.CategoryRepository;
+
+@Service
+public class CategoryService {
+
+	@Autowired
+	private CategoryRepository repository;
+
+	public List<Category> findAll() {
+		return repository.findAll();
+	}
+
+	public Category findById(Long id) {
+		Optional<Category> obj = repository.findById(id);
+		return obj.get();
+	}
+
+	public Category update(Long id, Category category) {
+		Category entity = repository.getReferenceById(id);
+		BeanUtils.copyProperties(category, entity);
+		return repository.save(entity);
+	}
+	
+	public Category insert(Category category) {
+		return repository.save(category);
+	}
+	
+	public void delete(Long id) {
+		Category entity = repository.getReferenceById(id);
+		repository.delete(entity);
+	}
+}

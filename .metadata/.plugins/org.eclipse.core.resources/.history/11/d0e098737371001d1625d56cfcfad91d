@@ -1,0 +1,5 @@
+package com.alandev.webservices.entities;
+
+public class OrderItem {
+
+}

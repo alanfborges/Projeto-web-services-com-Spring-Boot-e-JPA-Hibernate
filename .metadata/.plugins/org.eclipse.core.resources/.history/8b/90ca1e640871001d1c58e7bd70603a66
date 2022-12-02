@@ -1,0 +1,5 @@
+package com.alandev.webservices.config;
+
+public class TestConfig {
+
+}

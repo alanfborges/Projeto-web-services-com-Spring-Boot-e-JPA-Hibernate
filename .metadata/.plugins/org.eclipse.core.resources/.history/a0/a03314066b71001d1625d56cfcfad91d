@@ -1,0 +1,20 @@
+package com.alandev.webservices.entities;
+
+import java.util.HashSet;
+import java.util.Set;
+
+public class Product {
+
+	private Long id;
+	
+	private  String name;
+	
+	private String descritpion;
+	
+	private Double price;
+	
+	private String imgUrl;
+	
+	private Set<Category> categories = new HashSet<>();
+	
+}

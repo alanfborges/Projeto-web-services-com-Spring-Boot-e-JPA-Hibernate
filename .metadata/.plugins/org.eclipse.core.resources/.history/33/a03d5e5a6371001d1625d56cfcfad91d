@@ -1,0 +1,10 @@
+package com.alandev.webservices.entities.enums;
+
+public enum OrderStatus {
+	
+	WAITING_PAYMENT,
+	PAID,
+	SHIPPED,
+	DELIVERY,
+	CANCELED
+}
