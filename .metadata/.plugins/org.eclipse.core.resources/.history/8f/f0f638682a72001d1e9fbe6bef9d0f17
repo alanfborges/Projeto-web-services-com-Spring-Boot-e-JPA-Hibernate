@@ -1,0 +1,5 @@
+package com.alandev.webservices.resources.exceptions;
+
+public class ResourceExceptionHandler {
+
+}

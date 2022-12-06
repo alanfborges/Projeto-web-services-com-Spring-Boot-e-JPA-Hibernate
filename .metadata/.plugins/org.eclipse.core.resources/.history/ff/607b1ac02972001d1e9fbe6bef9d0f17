@@ -1,0 +1,10 @@
+package com.alandev.webservices.services.exceptions;
+
+public class ResrouceNotFoundException extends RuntimeException{
+
+	private static final long serialVersionUID = 1L;
+
+	public ResrouceNotFoundException(Object id){
+		super("Resource not found. id" + id);
+	}
+}
