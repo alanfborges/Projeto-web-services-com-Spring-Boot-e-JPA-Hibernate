@@ -556,3 +556,4 @@
 2022-12-06 19:20:14,871 [Worker-5: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Projeto-SpringBoot-Webservices\Projeto-SpringBoot-Rest\src\test\resources
 2022-12-06 19:20:25,565 [Worker-11: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources
 2022-12-06 19:20:25,572 [Worker-11: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2022-12-06 19:20:25,576 [Worker-11: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Projeto-SpringBoot-Webservices\Projeto-SpringBoot-Rest\src\test\resources
