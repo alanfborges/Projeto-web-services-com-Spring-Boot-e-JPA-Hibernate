@@ -30,13 +30,14 @@ public class UserService {
 		return repository.save(obj);
 	}
 	
-	public void delete(Long id) {
-		repository.deleteById(id);
-	}
-	
 	public User update(Long id, User user) {
 		User entity = repository.getReferenceById(id);
 		BeanUtils.copyProperties(user, entity,"id");
 		return repository.save(entity);
 	}
+	
+	public void delete(Long id) {
+		repository.deleteById(id);
+	}
+	
 }
